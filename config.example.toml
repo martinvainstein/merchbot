@@ -1,0 +1,20 @@
+[telegram]
+# Your Telegram bot token and the chat ID to notify
+bot_token = "YOUR_TELEGRAM_BOT_TOKEN"
+chat_id   = "YOUR_CHAT_ID"
+
+# Each [[products]] block defines one page to monitor
+# "available_keywords" are matched (case-insensitive) to decide availability
+# "soldout_keywords" are used to avoid false positives
+
+[[products]]
+name = "New arrivals"
+url  = "https://example.com/new-arrivals"
+available_keywords = ["add to cart", "in stock", "buy now"]
+soldout_keywords   = ["sold out", "no stock", "unavailable"]
+
+[[products]]
+name = "Band merch search"
+url  = "https://example.com/search?q=band"
+available_keywords = ["add to cart", "in stock", "buy now"]
+soldout_keywords   = ["sold out", "no stock", "unavailable"]
