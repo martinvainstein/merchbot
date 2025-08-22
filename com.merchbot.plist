@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
+ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.merchbot</string>
+
+  <!-- ⚠️ Replace "your-username" with yours before use -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/env</string>
+    <string>python3</string>
+    <string>/Users/your-username/merch-stock-bot/monitor.py</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/your-username/merch-stock-bot</string>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>StartInterval</key>
+  <integer>900</integer> <!-- 900 = cada 15 minutos -->
+
+  <key>StandardOutPath</key>
+  <string>/Users/your-username/merch-stock-bot/launchd.out.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/your-username/merch-stock-bot/launchd.err.log</string>
+</dict>
+</plist>
