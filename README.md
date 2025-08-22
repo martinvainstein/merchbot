@@ -21,7 +21,7 @@ It runs in the background on macOS via `launchd` and sends **Telegram** notifica
    ```bash
    git clone https://github.com/<your-username>/merch-stock-bot.git
    cd merch-stock-bot
-````
+   ````
 
 2. **Create a virtual environment & install dependencies**
 
